@@ -1,0 +1,18 @@
+
+
+<div class="jumbotron">
+  <h1 class="display-4">
+    <%= @dost.first_name %>
+    <%= @dost.ladt_name %>
+  </h1>
+  <p class="lead">
+    <%= @dost.email %>  |
+    <%= @dost.phone %>  |
+    <%= @dost.twitter %>
+  </p>
+
+<%= link_to 'Edit', edit_dost_path(@dost), class:'btn btn-secondary' %> 
+<%= link_to 'Delete', @dost, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %>
+<%= link_to 'Back', dosts_path, class:'btn btn-secondary' %>
+
+</div>
